@@ -12,3 +12,25 @@ with data from the other sql files.
 
 Currently only has Humaniti names. 
 
+All
+===
+	Requires SQLite
+
+Go
+==
+	Go is a compiled language.
+	Have not sifted this yet.
+
+PHP
+===
+  Requires PDO
+	Usage:
+		php getName.php
+
+Ruby
+====
+  Using a class, mostly because I'm learning OOP. 
+	Usage:
+		ruby getName.rb
+
+
