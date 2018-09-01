@@ -25,7 +25,7 @@ Currently only has Humaniti names.
   - Requires PDO
 	#### Usage:
 	```
-	-	php getName.php
+    php getName.php
 	```
 
 ### Ruby
@@ -33,5 +33,5 @@ Currently only has Humaniti names.
   - Using a class, mostly because I'm learning OOP. 
 	#### Usage:
 	```
-  ruby getName.rb
+    ruby getName.rb
 	```
