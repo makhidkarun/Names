@@ -24,10 +24,14 @@ Currently only has Humaniti names.
 
   - Requires PDO
 	#### Usage:
+	```
 	-	php getName.php
+	```
 
 ### Ruby
 
   - Using a class, mostly because I'm learning OOP. 
 	#### Usage:
-	-	ruby getName.rb
+	```
+  ruby getName.rb
+	```
