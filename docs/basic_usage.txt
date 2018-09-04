@@ -1,0 +1,39 @@
+How to use the names.db database for character names
+====================================================
+
+The process is pretty straight forward once you get the hang of it. If you have the SQLite driver for your language you are well on your way!
+
+SQLite
+======
+	
+Homepage:   https://www.sqlite.org/index.html
+
+
+Tasks
+=====
+
+Install your language
+
+Install SQLite for your OS
+
+Install the SQLite driver for your language
+
+Copy in the names.db database
+
+Open the database file
+
+Select a Male name, then select a Female name (Ruby exmaple, gender is a variable)
+	first_name_query = db.prepare "SELECT * from humaniti_#{gender}_first ORDER BY RANDOM() LIMIT 1"
+	first_name_result = first_name_query.execute
+
+Select a Last name (Ruby example)
+	last_name_query = db.prepare "SELECT * from humaniti_last ORDER BY RANDOM() LIMIT 1"
+  last_name_result = last_name_query.execute
+
+Close the database file
+
+Output the names: (Ruby example)
+	ruby getName.rb
+	Drew and Bonita Mayo
+
+
