@@ -21,6 +21,10 @@ def get_name(gender):
   name = ' '.join([f_name, l_name]).encode("utf-8")
   return name
 
-namer = get_name('F')
-print(namer)
+if __name__ == '__main__':
+  import random
+  genders = ['M', 'F']
+  gender = random.sample(genders, 1)
+  namer = get_name('F')
+  print(namer)
 
