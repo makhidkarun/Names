@@ -17,10 +17,9 @@ my $stmt_last     = qq(SELECT * from humaniti_last ORDER BY RANDOM() LIMIT 1;);
 
 my $gender = int(rand(2)) ? "F" : "M";
 my $stmt_first = '';
-if ($gender == 'M' ) {
+if ($gender eq "M" ) {
   $stmt_first  = qq(SELECT * from humaniti_male_first ORDER BY RANDOM() LIMIT 1;);
 } else {
-  print "My gender is ". $gender .".\n";
   $stmt_first  = qq(SELECT * from humaniti_female_first ORDER BY RANDOM() LIMIT 1;);
 }
 
@@ -43,7 +42,6 @@ $first_name = $row_f[0];
 while(my @row_l = $sth_l->fetchrow_array()) {
 $last_name = $row_l[0];
 }
-
 
 $dbh->disconnect();
 print $first_name ." ". $last_name ." [". $gender ."] \n";
