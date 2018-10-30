@@ -44,5 +44,5 @@ $last_name = $row_l[0];
 }
 
 $dbh->disconnect();
-print $first_name ." ". $last_name ." [". $gender ."] \n";
+print $first_name ." ". $last_name ."\n";
 
